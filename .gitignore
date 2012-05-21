@@ -1,0 +1,15 @@
+*.txt
+*.html
+*.pdf
+*.password 
+*.license
+*.mp4
+*.png
+bin/
+/documentation/
+/examples/
+/lib-native/
+/lib/
+/logs/
+/transcoder/
+/conf/*.password
