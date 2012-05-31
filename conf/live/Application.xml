@@ -24,18 +24,18 @@
 			
 		-->
 		<Streams>
-			<StreamType>live-lowlatency</StreamType>
+			<StreamType>live-record-lowlatency</StreamType>
 			<StorageDir>${com.wowza.wms.context.VHostConfigHome}/content</StorageDir>
 			<KeyDir>${com.wowza.wms.context.VHostConfigHome}/keys</KeyDir>
 			<!-- LiveStreamPacketizers (separate with commas): cupertinostreamingpacketizer, smoothstreamingpacketizer, sanjosestreamingpacketizer, cupertinostreamingrepeater, smoothstreamingrepeater, sanjosestreamingrepeater, dvrstreamingpacketizer, dvrstreamingrepeater -->
-			<LiveStreamPacketizers>cupertinostreamingpacketizer, smoothstreamingpacketizer, sanjosestreamingpacketizer</LiveStreamPacketizers>
+			<LiveStreamPacketizers>cupertinostreamingpacketizer,sanjosestreamingpacketizer</LiveStreamPacketizers>
 			<!-- Properties defined here will override any properties defined in conf/Streams.xml for any streams types loaded by this application -->
 			<Properties>
 			</Properties>
 		</Streams>
 		<Transcoder>
 			<!-- To turn on transcoder set to: transcoder -->
-			<LiveStreamTranscoder></LiveStreamTranscoder>
+			<LiveStreamTranscoder>transcoder</LiveStreamTranscoder>
 			<!-- [templatename].xml or ${SourceStreamName}.xml -->
 			<Templates>${SourceStreamName}.xml,transrate.xml</Templates>
 			<ProfileDir>${com.wowza.wms.context.VHostConfigHome}/transcoder/profiles</ProfileDir>
@@ -77,7 +77,7 @@
 		</DVR>
 
 		<!-- HTTPStreamers (separate with commas): cupertinostreaming, smoothstreaming, sanjosestreaming, dvrchunkstreaming -->
-		<HTTPStreamers>cupertinostreaming,smoothstreaming,sanjosestreaming</HTTPStreamers>
+		<HTTPStreamers>cupertinostreaming,sanjosestreaming</HTTPStreamers>
 		<SharedObjects>
 			<StorageDir></StorageDir>
 		</SharedObjects>
