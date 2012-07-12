@@ -24,7 +24,7 @@
 			</Encode>
 			<!-- Setup for 720p, high bandwith, main profile for desktop or set-top box -->
 			<Encode>
-				<Enable>true</Enable>
+				<Enable>false</Enable>
 				<Name>720p</Name>
 				<StreamName>mp4:${SourceStreamName}_720p</StreamName>
 				<Video>
@@ -76,7 +76,7 @@
 			</Encode>
 			<!-- Setup for 360p, high bandwith, main profile for desktop -->
 			<Encode>
-				<Enable>true</Enable>
+				<Enable>false</Enable>
 				<Name>360p</Name>
 				<StreamName>mp4:${SourceStreamName}_360p</StreamName>
 				<Video>
@@ -180,7 +180,7 @@
 			</Encode>
 			<!-- Setup for 160p, low bandwith, baseline profile for 3G mobile devices such as iOS, Android, Blackberry -->
 			<Encode>
-				<Enable>true</Enable>
+				<Enable>false</Enable>
 				<Name>160p</Name>
 				<StreamName>mp4:${SourceStreamName}_160p</StreamName>
 				<Video>
